@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #ffff00; 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #ffff00; 
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  background-color: var(--background);
+}
+
+.section-hero {
+  background: url("/assets/robot-hand.jpg"), linear-gradient(to bottom, rgba(0,0,0,0.4) 30%,rgba(0,0,0,0.85) 90%);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .navlinks .link {
+    @apply cursor-pointer text-[16px] hover:text-[#ffff00] font-medium py-3 lg:px-3 xl:px-5
+  }
+  .navlinks .active {
+    @apply text-[#ffff00]
+  }
+  .mobilenav {
+    @apply ease-in duration-500 lg:hidden min-h-fit my-5 w-full z-[999] fixed top-[5rem] left-0 bg-transparent overflow-y-hidden 
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+  height: screen;
+  /* backdrop-filter: ; */
+}
+
+[data-toggle-nav][data-open-nav="true"] #line1 {
+transform: translateY(0.375rem) rotate(40deg);
+}
+[data-toggle-nav][data-open-nav="true"] #line2 {
+transform: scaleX(0);
+opacity: 0;
+}
+[data-toggle-nav][data-open-nav="true"] #line3 {
+transform: translateY(-0.375rem) rotate(-40deg);
+}
