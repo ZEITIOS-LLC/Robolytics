@@ -3,7 +3,7 @@ import React from 'react'
 export const AboutSection = () => {
   return (
     <section id='about'>
-        <div className="container flex flex-col relative py-[5%] px-8 lg:px-16 min-h-[90vh]">
+        <div className="container mx-auto flex flex-col relative py-[5%] px-8 lg:px-16 min-h-[90vh]">
           <span className='text-7xl font-[900] tracking-[0.2em] absolute top-[5%] right-0 opacity-20'>ROBOLYTICS</span>
           <div className='mt-auto space-y-3 lg:w-[75%]'>
             <h2 className='text-primary text-2xl font-bold uppercase'>About Us</h2>
