@@ -25,11 +25,16 @@ const NavItems = [
     },
     {
         id: 4,
-        text: 'The team',
+        text: 'The Team',
         path: 'the-team'
     },
     {
         id: 5,
+        text: 'Why Us',
+        path: 'why-us'
+    },
+    {
+        id: 6,
         text: 'Contact Us',
         path: 'contact-us'
     }
