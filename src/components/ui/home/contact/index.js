@@ -10,8 +10,8 @@ export const Contact = () => {
                 <p>Address: 123 Technology Street, LLM Town, USA</p>
             </div>
         </div>
-        <section className="bg-transparent w-full lg:w-[60%]">
-            <div className='container max-w-screen-md px-4 mx-auto flex gap-10 flex-col md:flex-row'>
+        <section className="bg-[url('/assets/robot-head.jpg')] bg-cover bg-no-repeat px-[5%] py-5 lg:bg-none lg:bg-transparent w-full lg:w-[60%]">
+            <div className='container max-w-screen-md px-4 mx-auto flex flex-col md:flex-row'>
                 <div className=''>
                     <h1 className='text-3xl md:text-5xl font-poppins font-[700] uppercase'> Contact</h1>
                     <h3 className='text-primary text-xl md:text-2xl font-poppins font-semibold uppercase my-3'>Reach out to us</h3>
@@ -21,7 +21,7 @@ export const Contact = () => {
                     <p className='mt-8 text-lg opacity-75 font-montserrat font-medium'></p>
                 </div>
             </div>
-            <div className="container py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <div className="container lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 hidden text-4xl tracking-tight font-extrabold text-center text-primary">Get in Touch</h2>
                 {/* <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p> */}
                 <form action="#" className="space-y-8">
@@ -39,6 +39,11 @@ export const Contact = () => {
                     </div>
                     <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-gray-900 rounded-lg bg-primary sm:w-fit hover:bg-primary/80 focus:ring-4 focus:outline-none dark:focus:ring-primary-800">Send Message</button>
                 </form>
+            </div>
+            <div className='container lg:hidden mx-[5%] space-y-2 text-primary font-medium text-sm sm:text-base pt-[10%] mt-auto justify-end'>
+                <p>Email: info@robolytics.com</p>
+                <p>Phone: +123-456-7890</p>
+                <p>Address: 123 Technology Street, LLM Town, USA</p>
             </div>
         </section>
     </section>
